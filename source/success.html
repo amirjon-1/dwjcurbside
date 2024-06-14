@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Form</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -10px;
+        }
+
+        .form-group {
+            flex: 1 1 100%;
+            margin: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        input[type="submit"] {
+            background-color: #f5a623;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e09b0f;
+        }
+
+        .back-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-right: 10px;
+        }
+
+        .back-button:hover {
+            background-color: #444;
+            border-radius: 10px;
+        }
+
+       
+        #file {
+            width: 95%;
+            background-color:#e09b0f;
+            animation: progress 2s ease infinite;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+       }
+
+        #file::-webkit-progress-value {
+            background-color: #e09b0f;
+
+        }
+        .form-group1{
+            display: flex;
+        }
+    
+        .terms{
+            margin-left: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <form id="orderForm">
+            <h1>Order Form</h1>
+            
+            <progress id="file" value="50" max="100"> 50% </progress>
+            <div class="form-group">
+              <label for="full_name">Form Submitted! Please Pay Through The Opened Portal. If sharing with others, please share the same link with them!</label>
+            </div>
+        </form>     
+    </div>
+
+</body>
+</html>
